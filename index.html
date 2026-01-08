@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utsav Acharya - Personal Portfolio with AI Assistant MAYA">
+    <title>Utsav Acharya - MAYA Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Audio Player -->
+    <div class="audio-player" id="audioPlayer">
+        <button id="audioToggle" class="audio-btn" aria-label="Toggle Music">
+            <i class="fas fa-music"></i>
+        </button>
+        <audio id="backgroundMusic" loop>
+            <source src="assets/audio/background.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>UTSAV ACHARYA</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="maya-trigger" id="mayaTrigger">
+                <i class="fas fa-robot"></i> MAYA
+            </button>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Utsav Acharya</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer | Technology First Scholar | Innovator</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro">I'm a passionate full-stack developer and Technology First Scholar with a strong foundation in creating innovative solutions that make a difference.</p>
+                    <p>My journey in technology has been driven by a desire to solve real-world problems through elegant code and intuitive design. From building comprehensive hospital management systems to creating seamless note-taking applications, I strive for excellence in every project.</p>
+                    <p>I combine technical expertise with creative problem-solving, always eager to learn and adapt to new technologies and methodologies.</p>
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-img-wrapper">
+                            <img src="assets/images/profile.jpg" alt="Utsav Acharya" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skills will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-timeline" id="achievementsTimeline">
+                <!-- Achievements will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <!-- Testimonials will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>utsav.acharya@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+977 98XXXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/utasar" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/utsav-acharya" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/utsav_acharya" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Utsav Acharya. All rights reserved.</p>
+            <p>Powered by MAYA - AI Assistant</p>
+        </div>
+    </footer>
+
+    <!-- MAYA AI Assistant -->
+    <div class="maya-chat" id="mayaChat">
+        <div class="maya-header">
+            <div class="maya-title">
+                <i class="fas fa-robot"></i>
+                <span>MAYA - Your AI Guide</span>
+            </div>
+            <button class="maya-close" id="mayaClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="maya-messages" id="mayaMessages">
+            <div class="maya-message maya-bot">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm MAYA, Utsav's AI assistant. I can answer questions about his projects, skills, achievements, and background. How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="maya-input">
+            <input type="text" id="mayaInputField" placeholder="Ask me anything about Utsav...">
+            <button id="mayaSend">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div class="maya-suggestions">
+            <button class="suggestion-btn" data-question="Tell me about Utsav's projects">Projects</button>
+            <button class="suggestion-btn" data-question="What are his technical skills?">Skills</button>
+            <button class="suggestion-btn" data-question="What achievements has he earned?">Achievements</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="maya.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
