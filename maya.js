@@ -7,7 +7,17 @@ class MayaAI {
 
     // Analyze user input and generate appropriate response
     generateResponse(userInput) {
+        // Input validation
+        if (!userInput || typeof userInput !== 'string') {
+            return "I'm sorry, I didn't understand that. Could you please ask me something about Utsav?";
+        }
+        
         const input = userInput.toLowerCase().trim();
+        
+        // Check for empty input
+        if (!input) {
+            return "Please ask me a question about Utsav's projects, skills, achievements, or background.";
+        }
         
         // Check for greetings
         if (this.isGreeting(input)) {

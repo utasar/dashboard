@@ -41,6 +41,9 @@
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.2);
     --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.3);
+    
+    /* Layout */
+    --timeline-position: 30px;
 }
 
 html {
@@ -1013,7 +1016,7 @@ body {
     }
     
     .achievements-timeline::before {
-        left: 30px;
+        left: var(--timeline-position);
     }
     
     .achievement-item,
@@ -1027,7 +1030,7 @@ body {
     }
     
     .achievement-icon {
-        left: 30px;
+        left: var(--timeline-position);
     }
     
     .maya-chat {
@@ -1068,6 +1071,29 @@ body {
 @keyframes spin {
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Notification Animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(400px);
+        opacity: 0;
     }
 }
 

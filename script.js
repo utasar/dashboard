@@ -409,13 +409,43 @@ function initContactForm() {
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
         
-        // Simulate form submission
-        alert('Thank you for your message! Utsav will get back to you soon.');
+        // Show success message using a simple notification
+        showNotification('Thank you for your message! Utsav will get back to you soon.', 'success');
         contactForm.reset();
         
         // In a real application, you would send this to a backend API
         // Example: fetch('/api/contact', { method: 'POST', body: JSON.stringify(data) });
     });
+}
+
+// Show notification function
+function showNotification(message, type = 'info') {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: ${type === 'success' ? 'linear-gradient(135deg, #4CAF50, #45a049)' : 'linear-gradient(135deg, #667eea, #764ba2)'};
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        z-index: 10000;
+        animation: slideIn 0.3s ease;
+        max-width: 400px;
+    `;
+    notification.textContent = message;
+    
+    document.body.appendChild(notification);
+    
+    // Remove after 5 seconds
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 5000);
 }
 
 // Utility function to check if element is in viewport
