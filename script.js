@@ -101,7 +101,8 @@ function initAudioPlayer() {
             audioToggle.innerHTML = '<i class="fas fa-music"></i>';
         } else {
             backgroundMusic.play().catch(err => {
-                console.log('Audio playback failed:', err);
+                // Silently handle autoplay restrictions - user can manually enable
+                audioToggle.innerHTML = '<i class="fas fa-music"></i>';
             });
             audioToggle.classList.add('playing');
             audioToggle.innerHTML = '<i class="fas fa-pause"></i>';
@@ -413,7 +414,7 @@ function initContactForm() {
         contactForm.reset();
         
         // In a real application, you would send this to a backend API
-        console.log('Form submitted:', data);
+        // Example: fetch('/api/contact', { method: 'POST', body: JSON.stringify(data) });
     });
 }
 
