@@ -5,7 +5,7 @@ An advanced personal portfolio website featuring MAYA, an AI assistant that prov
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live-success)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-## 🌟 Features
+##  Features
 
 ### Interactive Dashboard
 - **Personal Projects Showcase**: Hospital Management System, Notes App, E-Commerce Platform, and AI Task Manager
@@ -37,7 +37,7 @@ An advanced personal portfolio website featuring MAYA, an AI assistant that prov
 - **SEO Optimized**: Semantic HTML and meta tags for better search visibility
 - **Performance**: Optimized loading and minimal external dependencies
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
@@ -71,7 +71,7 @@ npx http-server
 
 4. Visit `http://localhost:8000` in your browser
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 dashboard/
@@ -88,7 +88,7 @@ dashboard/
 └── README.md           # This file
 ```
 
-## 🎨 Customization
+##  Customization
 
 ### Update Portfolio Data
 Edit `data.js` to customize:
@@ -113,7 +113,7 @@ Edit `maya.js` to:
 - Expand knowledge base
 - Customize conversation flow
 
-## 🌐 Deployment
+##  Deployment
 
 ### GitHub Pages
 
@@ -153,7 +153,7 @@ git push
 
 3. Update GitHub Pages settings to use custom domain
 
-## 💡 Features Breakdown
+##  Features Breakdown
 
 ### MAYA AI Assistant
 MAYA uses pattern matching and natural language understanding to:
@@ -189,14 +189,14 @@ MAYA uses pattern matching and natural language understanding to:
 - **Font Awesome**: Icon library
 - **GitHub Pages**: Hosting platform
 
-## 📱 Browser Support
+##  Browser Support
 
 - Chrome/Edge (latest)
 - Firefox (latest)
 - Safari (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🤝 Contributing
+##  Contributing
 
 This is a personal portfolio project, but suggestions and feedback are welcome!
 
@@ -206,27 +206,19 @@ This is a personal portfolio project, but suggestions and feedback are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👤 Author
+##  Author
 
 **Utsav Acharya**
 - GitHub: [@utasar](https://github.com/utasar)
 - LinkedIn: [Utsav Acharya](https://linkedin.com/in/utsav-acharya)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Inspired by modern portfolio designs
 - Special mention to Arpan Bhandari's portfolio for setting the benchmark
 - Font Awesome for the icon library
 - The open-source community for inspiration and tools
 
-## 📞 Support
-
-For support or questions, please open an issue on GitHub or contact via email.
-
----
 
 **Built with ❤️ by Utsav Acharya** | Powered by MAYA AI Assistant
