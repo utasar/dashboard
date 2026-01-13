@@ -2,8 +2,7 @@
 
 An advanced personal portfolio website featuring MAYA, an AI assistant that provides intelligent insights into Utsav's projects, skills, and achievements.
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Live-success)
-![License](https://img.shields.io/badge/License-MIT-blue)
+
 
 ##  Features
 
